@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("#starting_date").change(function(){
+        alert("sdsd");
+var z=$("#starting_date").val();
+$('#ending_date').attr('min' , z);
+
+
+});
+
+
+
+
+
+});
+</script>
+</head>
+<body>
+
+<form>
+    <input type="date" name="start" id="starting_date" min = "2022-01-01">
+    <input type="date" name="end" id="ending_date" >
+    
+
+</form>
+
+
+
+</body>
+</html>
